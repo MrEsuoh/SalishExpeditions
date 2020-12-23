@@ -1,0 +1,16 @@
+{
+  "itemGroup.salishexpeditions": "Salish Expeditions",
+
+  "item.salishexpeditions.rockfish_spawn_egg": "Rockfish Spawn Egg",
+  "item.salishexpeditions.grunt_sculpin_spawn_egg": "Grunt Sculpin Spawn Egg",
+
+  "item.salishexpeditions.rockfish": "Raw Rockfish",
+  "item.salishexpeditions.cooked_rockfish": "Cooked Rockfish",
+  "item.salishexpeditions.grunt_sculpin": "Raw Grunt Sculpin",
+  "item.salishexpeditions.cooked_grunt_sculpin": "Cooked Grunt Sculpin",
+  "item.salishexpeditions.rockfish_bucket": "Bucket of Rockfish",
+  "item.salishexpeditions.grunt_sculpin_bucket": "Bucket of Grunt Sculpin",
+
+  "entity.salishexpeditions.rockfish": "Rockfish",
+  "entity.salishexpeditions.grunt_sculpin": "Grunt Sculpin"
+}

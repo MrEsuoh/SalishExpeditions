@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "salishexpeditions:grunt_sculpin"
+  },
+  "result": "salishexpeditions:cooked_grunt_sculpin",
+  "experience": 0.35,
+  "cookingtime": 100
+}

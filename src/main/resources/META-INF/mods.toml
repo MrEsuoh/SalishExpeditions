@@ -1,0 +1,10 @@
+modLoader="javafml" #mandatory
+loaderVersion="[35,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+license="All rights reserved"
+[[mods]] #mandatory
+modId="salishexpeditions" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="Salish Expeditions" #mandatory
+credits="OrcaBaryony, VakyPanda, Coda1552, & TheMapleMoose"
+description='''
+TBD.'''
