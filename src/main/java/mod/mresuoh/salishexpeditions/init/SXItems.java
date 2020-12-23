@@ -26,6 +26,12 @@ public class SXItems {
     public static final RegistryObject<SXSpawnEggItem> GRUNT_SCULPIN_SPAWN_EGG = REGISTRY.register("grunt_sculpin_spawn_egg", () ->
             new SXSpawnEggItem(SXEntities.GRUNT_SCULPIN, 0x587753, 0xc8d7c5 , new Item.Properties().group(GROUP)));
 
+    public static final RegistryObject<SXSpawnEggItem> RATFISH_SPAWN_EGG = REGISTRY.register("ratfish_spawn_egg", () ->
+            new SXSpawnEggItem(SXEntities.RATFISH, 0xaa6d3e, 0x344369 , new Item.Properties().group(GROUP)));
+
+    public static final RegistryObject<SXSpawnEggItem> SAILFIN_SCULPIN_SPAWN_EGG = REGISTRY.register("sailfin_sculpin_spawn_egg", () ->
+            new SXSpawnEggItem(SXEntities.SAILFIN_SCULPIN, 0xdfb061, 0x574b38 , new Item.Properties().group(GROUP)));
+
 
 
     public static final RegistryObject<Item> ROCKFISH = REGISTRY.register("rockfish", () ->
@@ -34,18 +40,26 @@ public class SXItems {
     public static final RegistryObject<Item> COOKED_ROCKFISH = REGISTRY.register("cooked_rockfish", () ->
             new Item(new Item.Properties().group(GROUP).food((new Food.Builder()).hunger(5).saturation(0.6F).build())));
 
-    public static final RegistryObject<Item> GRUNT_SCULPIN = REGISTRY.register("grunt_sculpin", () ->
+    public static final RegistryObject<Item> SCULPIN = REGISTRY.register("sculpin", () ->
             new Item(new Item.Properties().group(GROUP).food((new Food.Builder()).hunger(2).saturation(0.1F)
-                    .effect(new EffectInstance(Effects.POISON, 140, 1), 1.0f).build())));
+                    .effect(new EffectInstance(Effects.POISON, 140, 0), 1.0f).build())));
 
-    public static final RegistryObject<Item> COOKED_GRUNT_SCULPIN = REGISTRY.register("cooked_grunt_sculpin", () ->
+    public static final RegistryObject<Item> COOKED_SCULPIN = REGISTRY.register("cooked_sculpin", () ->
             new Item(new Item.Properties().group(GROUP).food((new Food.Builder()).hunger(5).saturation(0.6F).build())));
+
+
 
     public static final RegistryObject<Item> ROCKFISH_BUCKET = REGISTRY.register("rockfish_bucket", () ->
             new FishBucketItem(() -> SXEntities.ROCKFISH.get(), () -> Fluids.WATER, new Item.Properties().group(GROUP)));
 
     public static final RegistryObject<Item> GRUNT_SCULPIN_BUCKET = REGISTRY.register("grunt_sculpin_bucket", () ->
             new FishBucketItem(() -> SXEntities.GRUNT_SCULPIN.get(), () -> Fluids.WATER, new Item.Properties().group(GROUP)));
+
+    public static final RegistryObject<Item> RATFISH_BUCKET = REGISTRY.register("ratfish_bucket", () ->
+            new FishBucketItem(() -> SXEntities.RATFISH.get(), () -> Fluids.WATER, new Item.Properties().group(GROUP)));
+
+    public static final RegistryObject<Item> SAILFIN_SCULPIN_BUCKET = REGISTRY.register("sailfin_sculpin_bucket", () ->
+            new FishBucketItem(() -> SXEntities.SAILFIN_SCULPIN.get(), () -> Fluids.WATER, new Item.Properties().group(GROUP)));
 
 
 }

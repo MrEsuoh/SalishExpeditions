@@ -38,14 +38,24 @@ public class SalishExpeditions {
 
     @SubscribeEvent(priority = EventPriority.LOWEST)
     public static void registerBiomes(BiomeLoadingEvent event) {
+        if (event.getName().equals(new ResourceLocation("minecraft", "lukewarm_ocean"))) {
+            event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(SXEntities.SAILFIN_SCULPIN.get(), 20, 3, 3));
+        }
+
         if (event.getName().equals(new ResourceLocation("minecraft", "cold_ocean"))) {
             event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(SXEntities.ROCKFISH.get(), 30, 3, 3));
             event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(SXEntities.GRUNT_SCULPIN.get(), 30, 3, 3));
+            event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(SXEntities.SAILFIN_SCULPIN.get(), 25, 3, 3));
         }
 
         if (event.getName().equals(new ResourceLocation("minecraft", "deep_cold_ocean"))) {
             event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(SXEntities.ROCKFISH.get(), 30, 3, 3));
             event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(SXEntities.GRUNT_SCULPIN.get(), 30, 3, 3));
+            event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(SXEntities.RATFISH.get(), 20, 3, 3));
+        }
+
+        if (event.getName().equals(new ResourceLocation("minecraft", "deep_frozen_ocean"))) {
+            event.getSpawns().getSpawner(EntityClassification.WATER_CREATURE).add(new MobSpawnInfo.Spawners(SXEntities.RATFISH.get(), 25, 3, 3));
         }
 
     }
@@ -54,10 +64,14 @@ public class SalishExpeditions {
         registerEntityAttributes();
         EntitySpawnPlacementRegistry.register(SXEntities.ROCKFISH.get(), EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AbstractFishEntity::func_223363_b);
         EntitySpawnPlacementRegistry.register(SXEntities.GRUNT_SCULPIN.get(), EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AbstractFishEntity::func_223363_b);
+        EntitySpawnPlacementRegistry.register(SXEntities.RATFISH.get(), EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AbstractFishEntity::func_223363_b);
+        EntitySpawnPlacementRegistry.register(SXEntities.SAILFIN_SCULPIN.get(), EntitySpawnPlacementRegistry.PlacementType.IN_WATER, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AbstractFishEntity::func_223363_b);
     }
 
     private void registerEntityAttributes() {
         GlobalEntityTypeAttributes.put(SXEntities.ROCKFISH.get(), RockfishEntity.func_234176_m_().create());
         GlobalEntityTypeAttributes.put(SXEntities.GRUNT_SCULPIN.get(), RockfishEntity.func_234176_m_().create());
+        GlobalEntityTypeAttributes.put(SXEntities.RATFISH.get(), RockfishEntity.func_234176_m_().create());
+        GlobalEntityTypeAttributes.put(SXEntities.SAILFIN_SCULPIN.get(), RockfishEntity.func_234176_m_().create());
     }
 }

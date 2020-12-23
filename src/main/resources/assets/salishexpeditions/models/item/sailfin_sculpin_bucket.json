@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "salishexpeditions:item/grunt_sculpin"
+    "layer0": "salishexpeditions:item/sailfin_sculpin_bucket"
   }
 }

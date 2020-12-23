@@ -3,7 +3,9 @@ package mod.mresuoh.salishexpeditions.client;
 
 import mod.mresuoh.salishexpeditions.SalishExpeditions;
 import mod.mresuoh.salishexpeditions.client.renderer.GruntSculpinRenderer;
+import mod.mresuoh.salishexpeditions.client.renderer.RatfishRenderer;
 import mod.mresuoh.salishexpeditions.client.renderer.RockfishRenderer;
+import mod.mresuoh.salishexpeditions.client.renderer.SailfinSculpinRenderer;
 import mod.mresuoh.salishexpeditions.init.SXEntities;
 
 import mod.mresuoh.salishexpeditions.item.SXSpawnEggItem;
@@ -24,6 +26,8 @@ public class ClientEventBusSubscriber {
     public static void clientSetup(FMLClientSetupEvent event) {
         RenderingRegistry.registerEntityRenderingHandler(SXEntities.ROCKFISH.get(), RockfishRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(SXEntities.GRUNT_SCULPIN.get(), GruntSculpinRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(SXEntities.RATFISH.get(), RatfishRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(SXEntities.SAILFIN_SCULPIN.get(), SailfinSculpinRenderer::new);
     }
 
     @SubscribeEvent

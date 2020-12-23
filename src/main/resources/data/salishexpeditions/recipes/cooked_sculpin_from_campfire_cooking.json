@@ -1,9 +1,9 @@
 {
   "type": "minecraft:campfire_cooking",
   "ingredient": {
-    "item": "salishexpeditions:grunt_sculpin"
+    "item": "salishexpeditions:sculpin"
   },
-  "result": "salishexpeditions:cooked_grunt_sculpin",
+  "result": "salishexpeditions:cooked_sculpin",
   "experience": 0.35,
   "cookingtime": 600
 }

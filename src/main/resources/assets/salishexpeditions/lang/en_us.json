@@ -3,14 +3,21 @@
 
   "item.salishexpeditions.rockfish_spawn_egg": "Rockfish Spawn Egg",
   "item.salishexpeditions.grunt_sculpin_spawn_egg": "Grunt Sculpin Spawn Egg",
+  "item.salishexpeditions.ratfish_spawn_egg": "Spotted Ratfish Spawn Egg",
+  "item.salishexpeditions.sailfin_sculpin_spawn_egg": "Sailfin Sculpin Spawn Egg",
 
   "item.salishexpeditions.rockfish": "Raw Rockfish",
   "item.salishexpeditions.cooked_rockfish": "Cooked Rockfish",
-  "item.salishexpeditions.grunt_sculpin": "Raw Grunt Sculpin",
-  "item.salishexpeditions.cooked_grunt_sculpin": "Cooked Grunt Sculpin",
+  "item.salishexpeditions.sculpin": "Raw Sculpin",
+  "item.salishexpeditions.cooked_sculpin": "Cooked Sculpin",
+
   "item.salishexpeditions.rockfish_bucket": "Bucket of Rockfish",
   "item.salishexpeditions.grunt_sculpin_bucket": "Bucket of Grunt Sculpin",
+  "item.salishexpeditions.ratfish_bucket": "Bucket of Ratfish",
+  "item.salishexpeditions.sailfin_sculpin_bucket": "Bucket of Sailfin Sculpin",
 
   "entity.salishexpeditions.rockfish": "Rockfish",
-  "entity.salishexpeditions.grunt_sculpin": "Grunt Sculpin"
+  "entity.salishexpeditions.grunt_sculpin": "Grunt Sculpin",
+  "entity.salishexpeditions.ratfish": "Ratfish",
+  "entity.salishexpeditions.sailfin_sculpin": "Sailfin Sculpin"
 }
